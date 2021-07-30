@@ -9,6 +9,7 @@ A variational autoencoder (VAE) for molecular data.
 - pandas (Test on version 1.1.3)
 - scikit-learn (Tested on version 0.23.2)
 - Pytorch (Tested on version 1.8.0)
+- RDKit (Test on version 2021.03.2)
 - selfies (https://github.com/aspuru-guzik-group/selfies)
 
 
