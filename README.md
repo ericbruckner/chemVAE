@@ -19,4 +19,4 @@ This package contains Python scripts to build and/or deploy a variational autoen
 - Train the VAE
 - Load a VAE for the generation of new molecules
 
-main.py is the main script that lets you do all the above as shown by the example ()
+main.py is the main script that lets you do all the above as shown by the example (https://github.com/ericbruckner/chemVAE/blob/main/examples/example.ipynb)
