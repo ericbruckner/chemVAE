@@ -73,15 +73,15 @@ def onehotSELFIES(selfies):
 # VAE model compsed of 1DConv encoder and LSTM decoder
 class VAE(nn.Module):
 
-    def __init__(self, num_characters, max_seq_len, params):
+    def __init__(self, params):
 
         super(VAE, self).__init__()
         
         # Load Model Parameters
-        self.num_characters = num_characters
-        self.max_seq_len = max_seq_len
-        self.in_dimension = num_characters*max_seq_len
-        self.output_dimension = max_seq_len
+        self.num_characters = params['num_characters']
+        self.max_seq_len = params['seq_length']
+        self.in_dimension = params['num_characters']*params['seq_length']
+        self.output_dimension = params['seq_length']
         
         self.num_conv_layers = params['num_conv_layers']
         self.layer1_filters = params['layer1_filters']
